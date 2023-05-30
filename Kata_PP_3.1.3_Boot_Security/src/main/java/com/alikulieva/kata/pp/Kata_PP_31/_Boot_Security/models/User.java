@@ -54,9 +54,10 @@ public class User implements UserDetails {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles;
 
-    public User(String firstName, String lastName, byte age, String email, String password) {
+    public User(String firstName, String lastName, String username, byte age, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.username = username;
         this.age = age;
         this.email = email;
         this.password = password;
