@@ -341,7 +341,7 @@
                         </div>
                         <br>
                         <div class="container-fluid col-md-3 text-center">
-                            <div sec:authorize="hasAnyAuthority('ADMIN', 'CREATOR')" th:align="center">
+                            <div sec:authorize="hasAnyAuthority('ADMIN')" th:align="center">
                                 <form th:method="POST" th:action="@{/admin/createNewUser}">
                                     <div class="form-group">
                                         <label class="control-label font-weight-bold" for="firstName">First
